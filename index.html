@@ -17,35 +17,6 @@
     <div id="gameContainer" style="width: 900px; height: 1600px"></div>
 </div>
 <div class="simmer">template by: <a href="https://simmer.io" target="_blank">SIMMER.io</a></div>
-<script src="TemplateData/responsive.javascript">
-
-window.alert('123456');
-
-                var sensor_contents = document.getElementById("gameContainer");
-
-                sensor_contents.addEventListener('click', function () {
-                    DeviceOrientationEvent.requestPermission().then(function (response) {
-                        // リクエストが許可されたら
-                        window.alert('ddd');
-
-                        if (response === "granted") {
-                            // deviceorientationが有効化されるのでaddEventListener
-                            window.addEventListener("deviceorientation", deviceorientationHandler);
-                        }
-                    })
-                });
-
-                DeviceOrientationEvent.requestPermission().then(function (response) {
-                    // リクエストが許可されたら
-                    window.alert('eee');
-
-                    if (response === "granted") {
-                        // deviceorientationが有効化されるのでaddEventListener
-                        window.addEventListener("deviceorientation", deviceorientationHandler);
-                    }
-                })
-
-
-</script>
+<script src="TemplateData/responsive.javascript"></script>
 </body>
 </html>
